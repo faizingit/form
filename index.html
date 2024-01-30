@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./images/fav_2.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/2mRlUWNIPzo?si=aBNs9COJtJWmDJwj" title="YouTube welcome video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <center><h1><marquee behavior="" direction="alert"> Details to be filled:- </marquee></h1></center>
+
+        <div class="main">
+            
+            <form action="./input.txt" method="get" target="_blank" id="f1">
+                
+                <fieldset style="border-color: darkblue;border-radius: 50px;"> <legend style="color: crimson;"><b>Form</b></legend>
+
+                    <label for="SN"><b> Salutation: </b></label> <input type="text" id="SN" name="Sal" value="" placeholder="Mr." size="1" disabled>
+                    <br><br>
+
+                    <label for="FN"><b> Enter your First name: </b></label> <input type="text" id="FN" name="First" value="" placeholder="Enter here buddy!" required>
+                    <br><br>
+
+                    <label for="LN"><b> Enter your Last name: </b></label> <input type="text" id="LN" name="Last" value="Garu">
+                    <br><br>
+
+                    <label for="Age"><b> Enter your Age: </b></label>
+                    <input type="number" name="Age" id="" min="18" max="40" step="5" value="30"><br><br>
+
+                    <label for="file"><b>Upload your photo here:</b></label>
+                    <input type="file" name="Upload your file" id="file" multiple><br><br>
+                    
+                    <!-- <input type="date" name="Date" id=""> -->
+                    <!-- <input type="time" name="Time" id=""><br><br> -->
+
+                    <input type="datetime-local" name="DateTime" id=""><br><br>
+
+                    <label for="datemin"><b>Enter a date after 2000-01-01:</b></label>
+                    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+                    <label for="datemax"><b>Enter a date before 1990-01-01:</b></label>
+                    <input type="date" id="datemax" name="datemax" max="1989-12-31"><br><br>
+                    
+                    <input type="hidden" name="Batch-hide" value="4pm">
+                    
+                    <label for="url"><b>Your Git Hub Url: </b></label>
+                    <input type="url" name="URL" id="url" placeholder="https://faizingit.github.io/faiz">
+                    <br><br>
+
+                    <label for="ml"><b>Enter your mail:</b></label>
+                    <input type="email" name="mail" id="ml" autofocus >
+                    <br><br>
+
+                    <label for="pass"><b>Enter your Pass:</b></label>  
+                    <input type="password" name="pass" id="pass">
+                    <br><br>
+
+                    <input type="reset" value="Reset"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    
+                    <input type="submit" value="Login">
+                    <br><br>
+                    <input type="submit" formaction="input2.txt" value="Corporate Login">
+                </fieldset>
+                
+
+
+                
+            </form>
+
+        </div>
+
+        <div id="main">
+
+            <form action="./input.txt" method="post" autocomplete="on" novalidate>
+                <br>
+
+                <input type="search" name="" id="" placeholder="search" size="50" style="text-align: center;" ><button style="border: 1px solid blue;">🔍</button>
+                <br><br>
+
+                <b>Choose your gender:</b>
+                <input type="radio" name="gen" value="Male" id="M" form="f1">
+                <label for="M">Male</label>
+                <input type="radio" name="gen" value="Female" id="F" form="f1">
+                <label for="F">FeMale</label>
+                <br><br>
+
+                <b>Choose your skills:</b>
+                <input type="checkbox" name="skill1" value="html" id="h">
+                <label for="h">Html</label>
+                <input type="checkbox" name="skill2" value="xml" id="x">
+                <label for="x">Xml</label>
+                <br><br>
+
+                <input type="color" name="clr" id=""><br><br>
+                <label for="Flower"><b>Choose your favourite one: </b></label>
+                <br><br>
+                <select name="Flower" id="Flower" size="5" multiple>
+
+                    <optgroup label="flowers">
+                        <option value="lilly">lilly</option>
+                        <option value="lotus">lotus</option>
+                        <option value="Rose" selected>Rose</option>
+                    </optgroup>
+
+                    <optgroup label="fruits">
+                        <option value="Mango">Mango</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Kiwi">Kiwi</option>
+                    </optgroup>
+
+                </select>
+                <br><br>
+
+                <input type="range" id="ran" name="range" min="0" max="100"><br><br>
+
+                <input list="countrys" name="country" placeholder="+Enter your country code">
+                <datalist id="countrys">
+                  <option value="India">
+                  <option value="USA">
+                  <option value="UAE">
+                  <option value="UK">
+                  <option value="Maldives">
+                </datalist>
+                <br><br>
+
+                <label for="phone"><b>Enter your Contact number: </b></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-5]{3}-[0-3]{2}-[0-5]{3}" placeholder="[0-5]{3}-[0-3]{2}-[0-5]{3}">
+                <br><br>
+
+                <samp>Need Support...?</samp>
+                <a href="mailto:faiz@fmail.com">Mail us</a>
+                
+
+                
+                <br><br>
+              
+
+                <textarea name="comment" id="" style="width:10; height:10;" readonly>Please share your suggestions: </textarea> <!--can use rows="10" cols="30" for dimensions-->
+                <br><br>
+
+                <input type="image" src="./images/thanks.jpg" alt="image unavailable" onclick="alert('Thank You!')" width="170" height="170">
+                <br><br>
+
+                <!-- <input type="reset" value="Reset"> -->
+                <button type="reset" onclick="alert('All fields are Reset!')"> Reset </button>
+                <br><br>
+                <hr><br>
+                
+                <input type="submit" value="submit" onclick="alert('Your data has been submited in our records, Thank You!')" formtarget="_blank"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <input type="submit" formmethod="get" value="Submit using GET" formnovalidate="formnovalidate">
+                <!-- <button>Submit</button> -->
+                <!-- <input type="button" value="login"> -->
+                <br><br>
+                <hr>
+
+                <footer>&copy; By ❤️FAIZ </footer>
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
+

@@ -1,0 +1,34 @@
+h1{ color: yellow;
+    background-color: black;
+    border: 5px solid gold;
+    border-radius: 50px;
+}
+
+.main{background-color: azure;}
+#main{background-color: aliceblue;}
+
+div{text-align: center;}
+
+#main a {color: red ;}
+#main a:hover {
+    background-color: black;
+    color: cornsilk;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+input[type='submit']{color: crimson;background-color: aquamarine;border-radius: 50px;border-color: blue;}
+input[type='submit']:hover{color: aqua;background-color: black;}
+input[type='reset']:hover{color: whitesmoke;background-color: black;}
+input[type='text']{color: blue;border-color: crimson;border-style: hidden;background-color: azure;}
+
+/* 
+footer
+{
+ position:fixed;
+ bottom:8px;
+ right:8px;
+ opacity:0.5;
+ z-index:99;
+ color:rgb(231, 16, 16);
+} */
